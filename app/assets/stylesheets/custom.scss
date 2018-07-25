@@ -1,10 +1,7 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'color';
 /* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
-
 /* universal */
 
 body {
