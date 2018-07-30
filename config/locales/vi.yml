@@ -1,0 +1,15 @@
+vi:
+  controller:
+    users_controller:
+      fl: "Chào mừng đến Sample App!"
+
+  users:
+    new:
+      signup: "Đăng kí"
+      title: "Đăng kí"
+      con: "Confirmation"
+
+  shared: 
+    _error_messages: 
+      the_form: "Biểu mẫu có chữa"
+      error: "loi"
