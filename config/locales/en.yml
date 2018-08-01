@@ -1,15 +1,55 @@
 en:
-  layouts:
-    static_pages:
-      home: "Home"
-      Account: "Account"
-      login: "Log in"  
-      logout: "Log out"
-      profile: "Profile"
-      setting: "Settings"
-      users: "Users"
-      help: "Help"
-      sample_app: "sample app"
+  static_pages:
+    account: "Account"
+    login: "Log in"  
+    logout: "Log out"
+    profile: "Profile"
+    setting: "Settings"
+    users: "Users"
+    help: "Help"
+    home:
+      wellcome: "Welcome to the Sample App"
+      ruby_on_rails: "Ruby on Rails Tutorial"
+      micro_feed: "Micropost Feed"
+      sign_up: "Sign Up!"
+      rails_logo: "Rails logo"
+  
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      password: "Password"
+      password_confirm: "Password confirmation"
+  
+  microposts:
+    _microposts: 
+      posted: "Posted"
+      ago: "Ago"
+      delete: "Delete"
+      confirm: "Are you sure?"
+
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      password: "Password"
+      password_confirm: "Password confirmation"
+
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      password: "Password"
+      password_confirm: "Password confirmation"
 
   controller:
     users:
@@ -28,18 +68,30 @@ en:
     account_activation:
       acc: "Account activated!"
       inva: "Invalid activation link"
+    password_resets:
+      email_sent: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      error_update: "can't be empty"
+      success_update: "Password has been reset."
+      check_expiration: "Password reset has expired."
+      note: "Note"
+    micropost:
+      created: "Micropost created!"
+      deleted: "Micropost deleted"
+      can_not_delete: "Can not Micropost delete"
 
   users:
     new:
       signup: "Sign Up"
       title: "Sign Up"
-      con: "Confirmation"
-      Create: "Create my account"
+      confirmation_user: "Confirmation"
+      create_user: "Create my account"
     edit:
-      edit: "Edit user"
+      _edit: "Edit user"
       update: "Update your profile"
-      save: "Save changes"
+      save_change: "Save changes"
       change: "change"
+      _confirmation: "Confirmation"
     index:
       all_users: "All users"
     _user:
@@ -47,17 +99,30 @@ en:
       sure: "You sure?"
     _form:
       confirmation: "Confirmation"
+
   shared: 
     _error_messages: 
       the_form: "The form contains"
       error: "error"
+    _user_info:
+      view_my_profile: "view my profile"
+      micropost: "micropost"
+    _micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
 
   sessions:
     new:
       login: "Log In"
       sign: "Sign up now!"
       newuser: "New User?"
-      Remember: "Remember me on this computer"
+      remember: "Remember me on this computer"
+      forgot: "(forgot password)"
+
+  mailers:
+    user_mailer:
+      account: "Account activation"
+      password_reset: "Password Reset"
 
   user_mailer:
     account_activation:
@@ -67,8 +132,13 @@ en:
       active: "Activate"
       p1: "Password Reset"
       content: "find me in app/views/user_mailer/password_reset.html.erb"
+    password_reset:
+      title: "Reset Password"
+      link_reset: "To reset your password click the link below:"
+      expire: "This link will expire in two hours."
+      message: "If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is."
 
-  mailers:
-    hi: "Hi"
-    account: "Account activation"
-      
+  models:
+    micropost: 
+      five_mb: "should be less than 5MB"
