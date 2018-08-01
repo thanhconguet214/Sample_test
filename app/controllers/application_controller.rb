@@ -4,14 +4,14 @@ class ApplicationController < ActionController::Base
 
   def logged_in_user
     return if logged_in?
-    flash[:danger] = t ".please_log_in"
+    flash[:danger] = t "controller.application.please_log_in"
     redirect_to login_url
   end
 
   def correct_user
     @user = User.find_by id: params[:id]
     return if current_user? @user
-    flash[:danger] = t ".find_not_user"
+    flash[:danger] = t "controller.application.find_not_user"
     redirect_to root_url 
   end 
 end
