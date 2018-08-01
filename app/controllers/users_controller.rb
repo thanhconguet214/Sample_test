@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @users = User.page(params[:page]).per Settings.number_page
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.page params[:page]
+  end
 
   def new
     @user = User.new
@@ -67,6 +69,12 @@ class UsersController < ApplicationController
 
   def correct_user
     @user = User.find_by id: params[:id]
-    redirect_to root_url unless current_user? @user
+    return if current_user? @user
+    flash[:danger] = t "controller.user.please"
+    redirect_to root_url
+  end
+
+  def admin_user
+    redirect_to(root_url) unless current_user.admin?
   end
 end
