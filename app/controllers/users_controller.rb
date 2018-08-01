@@ -3,9 +3,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     return if @user
-      flash[:success] = t ".error"
-      redirect_to root_url     
-    end
+    flash[:success] = t ".error"
+    redirect_to root_url     
   end
 
   def new
@@ -15,6 +14,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params   
     if @user.save
+      log_in @user
       flash[:success] = t ".fl"
       redirect_to @user
     else

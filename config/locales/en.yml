@@ -1,8 +1,23 @@
 en:
+  layouts:
+    static_pages:
+      home: "Home"
+      Account: "Account"
+      login: "Log in"  
+      logout: "Log out"
+      profile: "Profile"
+      setting: "Settings"
+      users: "Users"
+      help: "Help"
+      sample_app: "sample app"
+
   controller:
     users_controller:
       fl: "Welcome to the Sample App!"
       error: "error"
+
+    sessions_controller:
+      invalid: "Invalid email/password combination"
 
   users:
     new:
@@ -14,3 +29,9 @@ en:
     _error_messages: 
       the_form: "The form contains"
       error: "error"
+
+  sessions:
+    new:
+      login: "Log In"
+      sign: "Sign up now!"
+      newuser: "New User?"
