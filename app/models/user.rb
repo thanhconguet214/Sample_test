@@ -2,11 +2,14 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   attr_accessor :remember_token
   before_save {email.downcase!}
-  validates :name, presence: true, length: {maximum: Settings.maximum1}
-  validates :email, presence: true, length: {maximum: Settings.maximum2},
+  validates :name, presence: true, 
+   length: {maximum: Settings.maximum1}
+  validates :email, presence: true, 
+    length: {maximum: Settings.maximum2},
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: Settings.minimum}
+  validates :password, presence: true, 
+    length: {minimum: Settings.minimum}, allow_nil: true
   has_secure_password
 
   class << self

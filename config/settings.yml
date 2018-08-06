@@ -2,3 +2,6 @@ var: 80
 maximum1: 50
 maximum2: 255
 minimum: 6
+gra: 50
+number_page: 5
+link_email:  http://gravatar.com/emails
