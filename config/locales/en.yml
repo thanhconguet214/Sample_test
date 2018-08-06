@@ -12,17 +12,22 @@ en:
       sample_app: "sample app"
 
   controller:
-    users_controller:
+    users:
       fl: "Welcome to the Sample App!"
       error: "error"
       del: "User deleted"
       not_del: "Not deleted"
       pro: "Profile updated"
-    sessions_controller:
-      invalid: "Invalid email/password combination"
-    application_controller:
+      please: "Please check your email to activate your account."
+    application:
       please_log_in: "Please log in."
       find_not_user: "Find not user"
+    sessions:
+      invalid: "Invalid email/password combination"
+      check_account: "Account not activated. Check your email for the activation link."
+    account_activation:
+      acc: "Account activated!"
+      inva: "Invalid activation link"
 
   users:
     new:
@@ -41,8 +46,7 @@ en:
       delete: "delete"
       sure: "You sure?"
     _form:
-      con: "Confirmation"
-
+      confirmation: "Confirmation"
   shared: 
     _error_messages: 
       the_form: "The form contains"
@@ -54,3 +58,17 @@ en:
       sign: "Sign up now!"
       newuser: "New User?"
       Remember: "Remember me on this computer"
+
+  user_mailer:
+    account_activation:
+      sample: "Sample App"
+      hi: "Hi"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Activate"
+      p1: "Password Reset"
+      content: "find me in app/views/user_mailer/password_reset.html.erb"
+
+  mailers:
+    hi: "Hi"
+    account: "Account activation"
+      
