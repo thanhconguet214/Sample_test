@@ -5,3 +5,4 @@ minimum: 6
 gra: 50
 number_page: 5
 link_email:  http://gravatar.com/emails
+password_reset_expired: 2
