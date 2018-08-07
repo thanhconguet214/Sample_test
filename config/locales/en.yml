@@ -41,6 +41,16 @@ en:
       password: "Password"
       password_confirm: "Password confirmation"
 
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
+      password: "Password"
+      password_confirm: "Password confirmation"
+
   controller:
     users:
       fl: "Welcome to the Sample App!"
