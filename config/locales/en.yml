@@ -31,26 +31,6 @@ en:
       delete: "Delete"
       confirm: "Are you sure?"
 
-  password_resets:
-    new:
-      forgot_password: "Forgot password"
-      submit: "Submit"
-    edit:
-      title: "Reset password"
-      submit: "Update password"
-      password: "Password"
-      password_confirm: "Password confirmation"
-
-  password_resets:
-    new:
-      forgot_password: "Forgot password"
-      submit: "Submit"
-    edit:
-      title: "Reset password"
-      submit: "Update password"
-      password: "Password"
-      password_confirm: "Password confirmation"
-
   controller:
     users:
       fl: "Welcome to the Sample App!"
@@ -99,6 +79,13 @@ en:
       sure: "You sure?"
     _form:
       confirmation: "Confirmation"
+    _follow:
+      follow: "Follow"
+    _unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_my_profile: "view my profile"
+      microposts: "Microposts"
 
   shared: 
     _error_messages: 
@@ -110,6 +97,9 @@ en:
     _micropost_form:
       compose: "Compose new micropost..."
       post: "Post"
+    _stats:
+      followers: "followers"
+      following: "following"
 
   sessions:
     new:
